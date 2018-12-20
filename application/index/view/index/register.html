@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册界面</title>
+    <style>
+        #logo{
+     position: absolute;
+        top:10%;
+        left:25%;
+        width:50%;
+        height: 30%;
+        
+        }
+        body{
+            background-image: url('__STATIC__/register/背景.png');
+     
+        }
+        #smallface{
+            height: 290px;width: 350px;
+            border: 1px solid white;
+            background-color:white;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;left: 20px;
+        }
+        #userimg{
+            height: 40px;width: 40px;
+            background-image: url('__STATIC__/register/用户.png');
+            background-size: 40px;
+            position: absolute;
+            left: 20px;top: 25px;
+        }
+        #passimg{
+            height: 65px;width: 40px;
+            background-image: url('__STATIC__/register/密码.png');
+            background-size:40px;
+            position: absolute;
+            left: 20px;top:95px;
+        }
+        #theuser{
+            position: absolute;
+            left:80px;top: 20px;
+        }
+        #thepassword{
+            position: absolute;
+            left: 80px;top: 100px;
+        }
+        #inputbtn{
+            height: 39px;width: 200px;
+            position: absolute;
+            left: 75px;top: 180px;
+            background: url(__STATIC__/register/注册.png)no-repeat;
+            background-size:200px;
+            border: none;
+        }   
+    </style>
+</head>
+<body >
+        <img src="__STATIC__\register\logo.png" alt="bug" id="logo">
+        <form action="{:url('/index/register/register')}" method="post">
+            <div id="smallface">
+                <div id="theuser">
+                    <font color="skyblue" size="3">用户名</font><br />
+                    <input type="text" id="text1" name="account" style="outline:none;border:none;border-bottom:1px solid gainsboro;width: 240px" />
+                </div>
+                <div id="userimg"></div> 
+                <div id="thepassword">
+                    <font color="skyblue" size="3">密码</font><br />
+                    <input type="password" id="text2" name="password" style="outline:none;border:none;border-bottom:1px solid gainsboro;width: 240px" />
+                </div>
+                <div id="passimg"></div>
+                <button id="inputbtn"></button>
+        </div>
+    </form>
+</body>
+</html>
